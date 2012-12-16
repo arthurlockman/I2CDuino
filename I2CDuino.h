@@ -24,8 +24,10 @@ private:
 	UINT8 m_address;
 
 public:
-	I2CDuino(UINT8 address);
+	I2CDuino(UINT32 slot, UINT8 address);
 	~I2CDuino();
+	Read();
+	Write();
 };
 
 #endif
